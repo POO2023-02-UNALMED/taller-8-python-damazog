@@ -31,5 +31,5 @@ class Futbolista(Deportista):
     def __str__(self):
         return f"Mi nombre es {self.getNombre()}. Soy profesional en el deporte {self.getDeporte()}. Tengo {self.getEdad()} años de edad y llevo {self.geAñosPracticando()} años en el deporte."
     
-futbolista = Futbolista("Juan Pablo", 30, "1,80", "M", 12, 400, 1, "Derecha")
-print(futbolista.getNombre(), futbolista.getEdad(), futbolista.getAltura(),futbolista.getSexo(),futbolista.getAñosPracticando(), futbolista.getGolesMarcados(),futbolista.getTarjetasRojas(),futbolista.getPiernaHabil())
+#futbolista = Futbolista("Juan Pablo", 30, "1,80", "M", 12, 400, 1, "Derecha")
+#print(futbolista.getNombre(), futbolista.getEdad(), futbolista.getAltura(),futbolista.getSexo(),futbolista.getAñosPracticando(), futbolista.getGolesMarcados(),futbolista.getTarjetasRojas(),futbolista.getPiernaHabil())

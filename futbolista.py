@@ -3,7 +3,7 @@ from deportista import Deportista
 class Futbolista(Deportista):
     listaFutbolistas = []
 
-    def __init__(self, nombre, edad, altura, sexo, deporte="Futbol", añosPracticando=0, golesMarcados=0, tarjetasRojas=0, piernaHabil=""):
+    def __init__(self, nombre, edad, altura, sexo, añosPracticando=0, golesMarcados=0, tarjetasRojas=0, piernaHabil="", deporte="Futbol"):
         super().__init__(nombre, edad, altura, sexo, deporte, añosPracticando)
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetasRojas
@@ -29,7 +29,7 @@ class Futbolista(Deportista):
         self._piernaHabil = piernaHabil
 
     def __str__(self):
-        return f"Mi nombre es {self.getNombre()}. Soy profesional en el deporte {self.getDeporte()}. Tengo {self.getEdad()} años de edad y llevo {self.geAñosPracticando()} años en el deporte."
+        return f"Mi nombre es {self.getNombre()}. Soy profesional en el deporte {self.getDeporte()}. Tengo {self.getEdad()} años de edad y llevo {self.getAñosPracticando()} años en el deporte."
     
 #futbolista = Futbolista("Juan Pablo", 30, "1,80", "M", 12, 400, 1, "Derecha")
-#print(futbolista.getNombre(), futbolista.getEdad(), futbolista.getAltura(),futbolista.getSexo(),futbolista.getAñosPracticando(), futbolista.getGolesMarcados(),futbolista.getTarjetasRojas(),futbolista.getPiernaHabil())
+#print(futbolista.getNombre(), futbolista.getEdad(), futbolista.getAltura(),futbolista.getSexo(),futbolista.getAñosPracticando(), futbolista.getGolesMarcados(),futbolista.getTarjetasRojas(),futbolista.getPiernaHabil(),futbolista.getDeporte())
